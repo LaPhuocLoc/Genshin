@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/adc3df0283.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="playVideo" id="playVideo" onclick="closeYoutube()">
+        <div class="playAndClose">
+            <div class="playYoutube">
+                <iframe src="https://www.youtube.com/embed/e3UDf15r5qQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <button id="closeYoutube" onclick="closeYoutube()">
+            </button>
+        </div>
+    </div>
+    <div class="layout" id="layout">
+        <div class="gNav">
+            <div class="logo">
+                <img src="image/logo.png">
+            </div>
+            <div class="list">
+                <ul>
+                    <li class="list_tab"><a href="#">HOME</a></li>
+                    <li class="list_tab"><a href="#">NEWS</a></li>
+                    <li class="list_tab"><a href="#">CHARACTERS</a></li>
+                    <li class="list_tab" class="submenu"><a href="#">DATABASE</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">ゲーム紹介</a></li>
+                            <li><a href="#">TEYVAT</a></li>
+                            <li><a href="#">WEAPONS</a></li>
+                            <li><a href="#">ARTIFACTS</a></li>
+                        </ul>
+                    </li>
+                    <li class="list_tab" class="submenu"><a href="#">もっと</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">公式フォーラム</a></li>
+                            <li><a href="#">TOP UP</a></li>
+                            <li><a href="#">CODE</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+            <div class="login">
+                <button class="login_btn">
+                    <span>ログイン</span>
+                    <img src="image/login.png">
+                </button>
+            </div>
+            <a href="#" class="downloads"><div class="downloads_img"></div></a>
+        </div><!-- id gNav -->
+
+        <div class="poster" id="posterr">
+            <div class="bgWrap">
+                <video id="bg" autoplay loop muted poster="image/poster.jpg">
+                    <source src="image/poster.mp4">
+                </video>
+            </div><!-- id bgWrap -->
+
+            <div class="poster__sign">
+                <div class="poster__video">
+                    <button class="poster__btn" onclick="playVideo()">
+                    </button>
+                </div> 
+                
+
+                <div class="poster__sub">
+                    クロスプラットフォーム正式リリース、今すぐダウンロード
+                </div>
+
+                <ul class="poster__download">
+                    <li><a href="https://www.playstation.com/games/genshin-impact/"><img src="image/ps4.png" alt=""></a></li>
+                    <li><a href="https://apps.apple.com/app/id1517783697"><img src="image/apple.png" alt=""></a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact"><img src="image/android.png" alt=""></a></li>
+                    <li><a href="https://ys-api-os.mihoyo.com/event/download_porter/link/ys_global/genshinimpactpc/default"><img src="image/window.png" alt=""></a></li>
+                </ul>
+                
+            </div><!-- id poster__sign-->
+
+        </div><!-- id poster -->
+
+        <section class="news">
+            <h3>
+                NEWS
+            </h3>
+            <div class="news__main">
+                <div class="news__slideshow">
+                    <div class="slides">
+                        <input type="radio" name="bottom" id="bottom_1" checked>
+                        <input type="radio" name="bottom" id="bottom_2">
+                        <input type="radio" name="bottom" id="bottom_3">
+                        <input type="radio" name="bottom" id="bottom_4">
+                        <input type="radio" name="bottom" id="bottom_5">
+                        <div class="slide s1" id="s1">
+                            <a href="https://www.youtube.com/watch?v=e3UDf15r5qQ"><img src="image/kazuha.jpg"></a>
+                        </div>
+                        <div class="slide s2">
+                            <a href="https://www.youtube.com/watch?v=TwL8monxaRA"><img src="image/bikini.jpg"></a>
+                        </div>
+                        <div class="slide s3">
+                            <a href="https://www.youtube.com/watch?v=hndHyoSrxX8"><img src="image/klee.jpg"></a>
+                        </div>
+                        <div class="slide s4">
+                            <a href="https://www.youtube.com/watch?v=LPaLrhzzbdo"><img src="image/bossevent.jpg"></a>
+                        </div>
+                        <div class="slide s5">
+                            <a href="https://www.youtube.com/watch?v=CHIpyrjnTvM"><img src="image/eula.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="slide_nav">
+                        <label for="bottom_1" id="bar1" class="bar"></label>
+                        <label for="bottom_2" id="bar2" class="bar"></label>
+                        <label for="bottom_3" id="bar3" class="bar"></label>
+                        <label for="bottom_4" id="bar4" class="bar"></label>
+                        <label for="bottom_5" id="bar5" class="bar"></label>
+                    </div>
+                </div>
+
+                <div class="news__content">
+                    <ul class="news__tab">
+                        <li> <a href="#">最新</a> </li>
+                    </ul>
+                    <ul class="news__detail">
+                        <li><a href="#">ヒルチャールスタンプ配布 <span>2021年06月20日</span></a></li>
+                        <li><a href="#">Ver.1.6「真夏！島？大冒険！」キービジュアル壁紙公開！<span>2021年06月19日</span></a></li>
+                        <li><a href="#">「真夏！島？大冒険！」Tips・第004期<span>2021年06月17日</span></a></li>
+                        <li><a href="#">「真夏！島？大冒険！」Tips・第003期<span>2021年06月14日</span></a></li>
+                        <li><a href="#">「真夏！島？大冒険！」Tips・第002期<span>2021年06月11日</span></a></li>
+                    </ul>
+                    <a href="#" class="news__more"> <i class="fa fa-plus-circle" aria-hidden="true"></i>もっと</a>
+                </div>
+            </div>
+        </section><!-- id news-->
+
+        <section class="city">
+            <div class="mond">
+                <div class="mond-bg"></div>
+                <a href="#">モンド城</a>
+            </div>
+            <div class="liyue">
+                <div class="liyue-bg"></div>
+                <a href="#">璃月港</a>
+            </div>
+        </section><!--id city-->
+
+        <div class="footer">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/Genshinimpact/"> <i class="fa fa-facebook" aria-hidden="true"></i> </a>
+                <a href="https://twitter.com/GenshinImpact"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
+                <a href="http://www.youtube.com/c/GenshinImpact"> <i class="fa fa-youtube" aria-hidden="true"></i> </a>
+                <a href="https://www.instagram.com/genshinimpact/"> <i class="fa fa-instagram" aria-hidden="true"></i> </a>
+                <a href="https://discord.gg/genshinimpact"> <i class="fab fa-discord    "></i> </a>
+                <a href="https://www.reddit.com/r/Genshin_Impact"> <i class="fa fa-reddit" aria-hidden="true"></i> </a>
+            </div>
+            <div class="footer__detail">
+                <div class="ft-logo">
+                    <ul class="mihoyo">
+                        <li id="mihoyo"><img src="image/mihoyo.png"></li>
+                        <li><img src="image/genshin3.png"></li>
+                    </ul>
+                </div>
+                <div class="ft-copyright">
+                    <ul class="copy-list">
+                        <li>
+                            <ul class="list1">
+                                <li><a href="#">プライバシーポリシー</a></li>
+                                <li><a href="#">原神利用規約</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="mailto:laphuocloc1701@gmail.com">お問い合わせ</a></li>
+                            </ul>
+                        </li>
+                        <li>Copyright © 2020 miHoYo All Rights Reserved</li>
+                        <li>“プレイステーション ファミリーマーク”、“PS4ロゴ”及び“PS5ロゴ”は株式会社ソニー・インタラクティブエンタテインメントの登録商標または商標です。</li>
+                        <li>Epic, Epic Games, Epic Games Store and their respective logos are trademarks or registered trademarks of Epic Games, Inc. In the U.S. Patent and Trademark Office and elsewhere.</li>
+                        <li><img src="image/copyright.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- id footer-->
+
+        <input type="checkbox" name="navcheck" id="navcheck" checked>
+        <div class="social">
+            <div class="social__nav">
+                <label for="navcheck" class="nav__logo"></label>
+            </div>
+            <div class="social__main">
+                <ul class="social__top">
+                    <li>Follow us</li>
+                </ul>
+                <ul class="social__icon">
+                    <li><a href="https://www.facebook.com/Genshinimpact/"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+                    <li><a href="https://twitter.com/GenshinImpact"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+                    <li><a href="http://www.youtube.com/c/GenshinImpact"><i class="fa fa-youtube" aria-hidden="true"></i>YouTube</a></li>
+                    <li><a href="https://www.instagram.com/genshinimpact/"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+                    <li><a href="https://discord.gg/genshinimpact"><i class="fab fa-discord"></i>Discord</a></li>
+                    <li><a href="https://www.reddit.com/r/Genshin_Impact"><i class="fa fa-reddit" aria-hidden="true"></i>Reddit</a></li>
+                </ul>
+            </div>
+        </div><!-- id social-->
+
+        
+    </div><!-- id layout -->
+</body>
+</html>
